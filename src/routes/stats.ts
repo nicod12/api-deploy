@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import { readJSON } from '../utils';
 import { TeamStats } from '../services/stats.types';
 import path from 'path';
@@ -7,7 +7,7 @@ const gameStats: TeamStats  = readJSON(path.join(__dirname, '../services/stats.j
 
 export const statsRouter = express.Router();
 
-statsRouter.get('/', (_req, res) => {
+statsRouter.get('/', (_req: Request, res: Response) => {
   try {
     res.json(gameStats);
   } catch (error) {
