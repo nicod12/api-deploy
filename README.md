@@ -15,4 +15,9 @@ npm run build, npm run tsc
 
 endpoinds
 http://localhost:3000/api/stats
+<br>
 http://localhost:3000/api/match
+<br>
+deploy: https://api-deploy-g0f3-dev.fl0.io/api/stats
+<br>
+https://api-deploy-g0f3-dev.fl0.io/api/match
