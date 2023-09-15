@@ -1,6 +1,6 @@
 import express, { json } from "express";
-import { corsMiddleware } from "./src/middlewares/cors";
-import { matchRouter, statsRouter } from "./src/routes";
+import { corsMiddleware } from "./middlewares/cors";
+import { matchRouter, statsRouter } from "./routes";
 
 
 

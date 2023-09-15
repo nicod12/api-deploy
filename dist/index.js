@@ -25,8 +25,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importStar(require("express"));
-const cors_1 = require("./src/middlewares/cors");
-const routes_1 = require("./src/routes");
+const cors_1 = require("./middlewares/cors");
+const routes_1 = require("./routes");
 const app = (0, express_1.default)();
 app.use((0, express_1.json)());
 app.use((0, cors_1.corsMiddleware)());
